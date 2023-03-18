@@ -14,7 +14,7 @@ const Header = () => {
 					</li>
 					<li>
 						<Link
-							href={`/`}
+							href={`/users`}
 							className='text-sm font-medium uppercase'>
 							Users
 						</Link>

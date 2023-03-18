@@ -1,4 +1,4 @@
-const { getUsers } = require('@/lib/prisma/users')
+const { getUsers, createUser } = require('@/lib/prisma/users')
 
 const handler = async (req, res) => {
 	if (req.method === 'GET') {
