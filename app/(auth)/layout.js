@@ -1,3 +1,4 @@
+import '../(site)/globals.css'
 import { ChevronLeftIcon } from '@heroicons/react/24/outline'
 import Provider from 'app/(site)/provider'
 import Link from 'next/link'
