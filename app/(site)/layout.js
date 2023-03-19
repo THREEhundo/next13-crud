@@ -1,6 +1,7 @@
 import Footer from './footer'
 import './globals.css'
 import Header from './header'
+import Provider from './provider'
 
 export const metadata = {
 	title: 'Twitter Clone',
@@ -11,9 +12,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<Header />
-				<main>{children}</main>
-				<Footer />
+				<Provider>
+					<Header />
+					<main>{children}</main>
+					<Footer />
+				</Provider>
 			</body>
 		</html>
 	)

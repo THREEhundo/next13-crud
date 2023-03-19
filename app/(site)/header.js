@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LoginButton from '../components/auth/SignInButton'
 
 const Header = () => {
 	return (
@@ -19,6 +20,11 @@ const Header = () => {
 							Users
 						</Link>
 					</li>
+					<ul className='ml-auto'>
+						<li>
+							<LoginButton />
+						</li>
+					</ul>
 				</ul>
 			</nav>
 		</header>
