@@ -8,7 +8,7 @@ const User = ({ user }) => {
 			<div className='center'>
 				<div className='relative h-40 w-40 rounded-full'>
 					<Image
-						src={user?.imageUrl}
+						src={user?.image}
 						alt={user?.name}
 						className=' rounded-md object-contain'
 						fill
