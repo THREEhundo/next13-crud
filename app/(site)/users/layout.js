@@ -1,7 +1,7 @@
 import { getUsers } from '@/lib/prisma/users'
 import Users from './users'
 
-export const revalidate = 0
+//export const revalidate = 0
 
 async function getData() {
 	const { users } = await getUsers()
