@@ -15,6 +15,9 @@ const SignInButton = () => {
 						alt={session.user.name}
 						className='inline-block rounded-full'
 						fill
+						sizes='(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw'
 					/>
 				) : (
 					<span className='inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100'>

@@ -12,6 +12,10 @@ const User = ({ user }) => {
 						alt={user?.name}
 						className=' rounded-md object-contain'
 						fill
+						priority
+						sizes='(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw'
 					/>
 				</div>
 				<h1 className='text-xl font-bold'>{user?.name}</h1>

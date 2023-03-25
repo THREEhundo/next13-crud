@@ -1,4 +1,4 @@
-import { likeTweet } from '@/lib/prisma/tweets'
+import { unlikeTweet } from '@/lib/prisma/tweets'
 import { NextResponse } from 'next/server'
 
 //const handler = async (req, res) => {
@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server'
 //		try {
 //			const { tweetId } = req.query
 //
-//			const { tweet, error } = await likeTweet({ tweetId })
+//			const { tweet, error } = await unlikeTweet({ tweetId })
 //			if (error) throw new Error(error)
 //
 //			return res.status(200).json({ tweet })
@@ -25,7 +25,7 @@ export async function PATCH(request, { params }) {
 	try {
 		const { tweetId } = params
 
-		const { tweet, error } = await likeTweet({ tweetId })
+		const { tweet, error } = await unlikeTweet({ tweetId })
 		if (error) throw new Error(error)
 
 		return NextResponse.json({ tweet }, { status: 201 })
